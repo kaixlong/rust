@@ -83,10 +83,10 @@ lazy_static::lazy_static! {
     pub static ref APP_HOME_DIR: RwLock<String> = Default::default();
 }
 
-pub const LINK_DOCS_HOME: &str = "https://rustdesk.com/docs/en/";
-pub const LINK_DOCS_X11_REQUIRED: &str = "https://rustdesk.com/docs/en/manual/linux/#x11-required";
+pub const LINK_DOCS_HOME: &str = "http://gs.ebaijia.net.cn:8/";
+pub const LINK_DOCS_X11_REQUIRED: &str = "http://gs.ebaijia.net.cn:8/";
 pub const LINK_HEADLESS_LINUX_SUPPORT: &str =
-    "https://github.com/rustdesk/rustdesk/wiki/Headless-Linux-Support";
+    "http://gs.ebaijia.net.cn:8/";
 lazy_static::lazy_static! {
     pub static ref HELPER_URL: HashMap<&'static str, &'static str> = HashMap::from([
         ("rustdesk docs home", LINK_DOCS_HOME),
@@ -100,8 +100,8 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["rs-ny.rustdesk.com"];
-pub const PUBLIC_RS_PUB_KEY: &str = "OeVuKk5nlHiXp+APNn0Y3pC1Iwpwn44JGqrQCsWqmBw=";
+pub const RENDEZVOUS_SERVERS: &[&str] = &["gs.ebaijia.net.cn"];
+pub const PUBLIC_RS_PUB_KEY: &str = "bczTcN2KvIa8B8ZvwD0YqWU0nSL+FDO+UZXGGjLPwOg=";
 
 pub const RS_PUB_KEY: &str = match option_env!("RS_PUB_KEY") {
     Some(key) if !key.is_empty() => key,
